@@ -10,9 +10,6 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
@@ -24,9 +21,9 @@ import javax.swing.JOptionPane;
  */
 
 // About ActionListener
-// ActionListener is basically a interface
+// ActionListener is basically an interface
 // it receives the action event
-//whatever action is happening it bascially (receives)listens ot it
+//whatever action is happening it bascially (receives)listens to it
 // and performs the action accordingly
 // so it is called just after the user performs an action
 // it allows us to access the properties of Action event
@@ -38,19 +35,19 @@ public class AppFrame extends JFrame implements ActionListener {
     
     AppFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        this.setLayout(null);
         compressButton=new JButton("Select file to compress");
-        compressButton.setBounds(20, 100, 200, 30);
+        compressButton.setBounds(400, 100, 200, 25);
         compressButton.addActionListener(this);
                 
         decompressButton=new JButton("Select file to decompress");
-        decompressButton.setBounds(250,100,200,30);
+        decompressButton.setBounds(400,350,200,25);
         decompressButton.addActionListener(this);
         
         this.add(compressButton);
         this.add(decompressButton);
         this.setSize(1000,500);
-        this.getContentPane().setBackground(Color.red);
+        this.getContentPane().setBackground(Color.CYAN);
         this.setVisible(true);
     }
     

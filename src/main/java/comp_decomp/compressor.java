@@ -30,10 +30,10 @@ public class compressor {
         int len;
         
         // fis.read-> reads upto buffer.length bytes of data
-        // from InputStream into anarray of bytes
+        // from InputStream into an array of bytes
         while((len=fis.read(buffer))!=-1){
             // buffer-> the data,  0->offset data, len-> number of bytes to write
-            // so it will start from starting index and it will go till the ending index till the 
+            // so it will start from starting index and it will go till the ending index
             // write will helps us to write down len bytes
             // from the buffer arrray starting with the offset vale to the output stream
             gzip.write(buffer,0,len);

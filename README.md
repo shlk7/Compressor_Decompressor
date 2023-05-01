@@ -3,4 +3,4 @@ This project helps in compressing a large size file into smaller size file and a
 
 #Tech Stack
 * Java
-*Java Swing
+* Java Swing
